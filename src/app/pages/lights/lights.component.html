@@ -1,0 +1,5 @@
+<div class="content">
+    <div class="col-sm-6" *ngFor="let light of lightList">
+        <app-light-card [name]="light.name" [address]='light.address' [type]="light.type" (click)="navigateToLight(light)"></app-light-card>
+    </div>
+</div>
